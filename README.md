@@ -24,17 +24,17 @@ The system uses a multi-agent workflow with specialized agents:
 1. Clone this repository
 2. Create a virtual environment:
    ```
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   uv venv
    ```
 3. Install dependencies:
    ```
-   pip install -r requirements.txt
+   uv sync
    ```
 4. Create a `.env` file with your Google API key for Gemini:
    ```
    GOOGLE_API_KEY=your_google_api_key_here
    MODEL_ID=gemini-1.5-pro
+   etc
    ```
 
 ## Usage
@@ -42,7 +42,7 @@ The system uses a multi-agent workflow with specialized agents:
 Run the workflow with:
 
 ```
-python seo_blog_workflow.py
+uv run seo_blog_workflow.py
 ```
 
 You'll be prompted to:
@@ -58,9 +58,9 @@ The system will:
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.12+
 - Google API key for Gemini
-- Required Python packages (see requirements.txt)
+- Required Python packages 
 
 ## License
 
