@@ -1,0 +1,18 @@
+[project]
+name = "agno-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "agno>=1.4.3",
+    "duckduckgo-search>=8.0.1",
+    "google-genai>=1.13.0",
+    "lancedb>=0.22.0",
+    "langsmith>=0.0.92",
+    "langtrace-python-sdk>=3.8.17",
+    "mcp>=1.7.1",
+    "pypdf>=5.4.0",
+    "python-dotenv>=1.1.0",
+    "youtube-transcript-api>=1.0.3",
+]
